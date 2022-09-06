@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Delivery_Loquesea"
         tools:targetApi="31">
         <activity
+            android:name=".view.DomicilioEntregaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.DescripcionPedidoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
