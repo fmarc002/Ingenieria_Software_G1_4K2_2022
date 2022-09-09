@@ -8,7 +8,7 @@ public class Domicilio implements Serializable {
     private String calle;
     private int numero;
     private String dpto;
-    private int piso;
+    private Integer piso;
     private String referencia;
 
     public String getLocalidad() {
@@ -43,11 +43,11 @@ public class Domicilio implements Serializable {
         this.dpto = dpto;
     }
 
-    public int getPiso() {
+    public Integer getPiso() {
         return piso;
     }
 
-    public void setPiso(int piso) {
+    public void setPiso(Integer piso) {
         this.piso = piso;
     }
 

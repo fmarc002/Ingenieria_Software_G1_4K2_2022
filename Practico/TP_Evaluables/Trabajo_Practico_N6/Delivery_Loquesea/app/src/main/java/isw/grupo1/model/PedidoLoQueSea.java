@@ -6,6 +6,8 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import isw.grupo1.controller.ControladorPedidoLoQueSea;
+
 public class PedidoLoQueSea implements Serializable {
 
     private boolean entregaAntesPosible;
@@ -17,14 +19,22 @@ public class PedidoLoQueSea implements Serializable {
     private String uriImagen;
     private float total;
     private float montoAbonar;
+    private String medioPago;
     private TarjetaCredito tarjetaCredito;
 
-    public void setDomicilioRetiro(String localidad, String calle, int numero, String referencia) {
+    public void setDomicilioRetiro(String localidad, String calle, int numero, String referencia,
+                                   Integer piso, String dpto) {
         domicilioRetiro = new Domicilio();
         domicilioRetiro.setCalle(calle);
         domicilioRetiro.setLocalidad(localidad);
         domicilioRetiro.setNumero(numero);
         domicilioRetiro.setReferencia(referencia);
+        domicilioRetiro.setPiso(piso);
+        domicilioRetiro.setDpto(dpto);
+    }
+
+    public String getMedioPago() {
+        return medioPago;
     }
 
     public boolean isEntregaAntesPosible() {
@@ -75,6 +85,53 @@ public class PedidoLoQueSea implements Serializable {
 
     public void setDescripcionPedido(String descripcionPedido, Uri uriImagen){
         this.descripcionPedido = descripcionPedido;
-        this.uriImagen = uriImagen.toString();
+        if(uriImagen != null) {
+            this.uriImagen = uriImagen.toString();
+        }
     }
+
+    public boolean esLoAntesPosible(){
+        return entregaAntesPosible;
+    }
+
+    public void setTotal(float total) {
+        this.total = total;
+    }
+
+    public void setDomicilioEntrega(String localidad, String calle, int numero,
+                                    String referencia, Integer piso, String dpto) {
+        domicilioEnvio = new Domicilio();
+        domicilioEnvio.setLocalidad(localidad);
+        domicilioEnvio.setCalle(calle);
+        domicilioEnvio.setNumero(numero);
+        domicilioEnvio.setReferencia(referencia);
+        domicilioEnvio.setPiso(piso);
+        domicilioEnvio.setDpto(dpto);
+
+    }
+
+    public void setPagoEfectivo(String medioPago, float montoAbonar){
+        this.medioPago = medioPago;
+        this.montoAbonar = montoAbonar;
+
+    }
+    public boolean esPagoTarjeta(){
+        return medioPago.equals(ControladorPedidoLoQueSea.PAGO_TARJETA);
+    }
+
+    public void setPagoTarjeta(String medioPago, String titular, String nroTarjeta,
+                               String cvc, String fechaV) {
+        this.medioPago = medioPago;
+        tarjetaCredito = new TarjetaCredito();
+        tarjetaCredito.setTitular(titular);
+        tarjetaCredito.setNroTarjeta(nroTarjeta);
+        tarjetaCredito.setCvc(cvc);
+        tarjetaCredito.setVencimiento(fechaV);
+    }
+
+    public String getResumenNroTarjeta(){
+        if(tarjetaCredito == null) return null;
+        return tarjetaCredito.getResumenNroTarjeta();
+    }
+
 }

@@ -1,11 +1,14 @@
 package isw.grupo1;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -13,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
@@ -21,10 +25,13 @@ import com.google.android.material.textfield.TextInputLayout;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import isw.grupo1.controller.ControladorPedidoLoQueSea;
+import isw.grupo1.model.Domicilio;
 import isw.grupo1.view.DatePickerFragment;
 import isw.grupo1.view.DescripcionPedidoActivity;
 import isw.grupo1.view.TimePickerFragment;
@@ -40,8 +47,15 @@ public class MainActivity extends AppCompatActivity{
     private ControladorPedidoLoQueSea controlador;
     private RadioButton rdBtnAntesPosible;
     private RadioButton rdBtnEntregaProgramada;
-    private EditText etFechaEntregaSel;
+    private EditText etFechaEntregaSel, etPisoRetiro, etDptoRetiro;
     private TextInputLayout tilCalleRetiro, tilNroCalleRetiro, tilReferenciaRetiro, tilFechaEnvio;
+    private TextInputLayout tilPisoRetiro, tilDptoRetiro;
+    private ImageView ivMapa;
+    private ConstraintLayout clVistaMain;
+    private ActionBar actionBar;
+
+    private static long LAST_CLICK_TIME = 0;
+    private final int mDoubleClickInterval = 400; // Milliseconds
 
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -50,14 +64,23 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         controlador = new ControladorPedidoLoQueSea();
         setContentView(R.layout.activity_main);
-        cargarCiudades();
         cargarVistas();
+        cargarCiudades();
         cargarListeners();
+        agregarFiltros();
         rdBtnAntesPosible.setChecked(true);
         etFechaEntregaSel.setText("");
         tilFechaEnvio.setVisibility(View.GONE);
         etFechaEntregaSel.setVisibility(View.GONE);
+        cargarActionBar();
 
+    }
+
+    private void cargarActionBar(){
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setCustomView(R.layout.custom_action_bar);
+        View view =actionBar.getCustomView();
     }
 
     private void cargarVistas(){
@@ -72,6 +95,15 @@ public class MainActivity extends AppCompatActivity{
         rdBtnAntesPosible = findViewById(R.id.rdBtnAntesPosible);
         rdBtnEntregaProgramada = findViewById(R.id.rdBtnEntregaProgramada);
         etFechaEntregaSel = findViewById(R.id.etFechaSeleccionada);
+        spnCiudades = findViewById(R.id.spnCiudadesRetiro);
+        imgBtnMapa = findViewById(R.id.btnMapaSelDomRetiro);
+        ivMapa = findViewById(R.id.ivMapaRetiro);
+        clVistaMain = findViewById(R.id.clVistaMain);
+        etPisoRetiro = findViewById(R.id.etPisoRetiro);
+        etDptoRetiro = findViewById(R.id.etDptoRetiro);
+        tilPisoRetiro = findViewById(R.id.tilPisoRetiro);
+        tilDptoRetiro = findViewById(R.id.tilDptoRetiro);
+        actionBar = getSupportActionBar();
 
     }
     private void cargarListeners(){
@@ -81,7 +113,43 @@ public class MainActivity extends AppCompatActivity{
         etCalle.setOnFocusChangeListener((view, tieneFoco) -> cambioFocoEtCalle(tieneFoco));
         etNro.setOnFocusChangeListener((view, tieneFoco) -> cambioFocoNroCalle(tieneFoco));
         etReferencia.setOnFocusChangeListener((view, tieneFoco) -> cambioFocoReferencia(tieneFoco));
+        imgBtnMapa.setOnClickListener((view) -> mostrarMapa());
+        ivMapa.setOnClickListener((view) -> seleccionDomicilioMapa());
 
+    }
+    private void agregarFiltros(){
+        ArrayList<InputFilter> curInputFilters = new ArrayList<>(Arrays.asList(etCalle.getFilters()));
+        curInputFilters.add(0, new ControladorPedidoLoQueSea.AlphaNumericInputFilter());
+        curInputFilters.add(1, new InputFilter.AllCaps());
+        InputFilter[] newInputFilters = curInputFilters.toArray(new InputFilter[curInputFilters.size()]);
+        etCalle.setFilters(newInputFilters);
+        etDptoRetiro.setFilters(newInputFilters);
+    }
+
+    private void seleccionDomicilioMapa() {
+        long doubleClickCurrentTime = System.currentTimeMillis();
+        long currentClickTime = System.currentTimeMillis();
+        if (currentClickTime - LAST_CLICK_TIME <= mDoubleClickInterval){
+
+            ivMapa.setVisibility(View.GONE);
+            clVistaMain.setVisibility(View.VISIBLE);
+            //Domicilio domicilio = controlador.obtenerDomicilioRandom();
+            Random random = new Random();
+            //etCalle.setText(domicilio.getCalle());
+            //etNro.setText(domicilio.getNumero());
+            //etPisoRetiro.setText(domicilio.getPiso());
+            //etDptoRetiro.setText(domicilio.getDpto());
+            spnCiudades.setSelection(random.nextInt(spnCiudades.getAdapter().getCount()));
+
+        }else {
+            LAST_CLICK_TIME = System.currentTimeMillis();
+            // !Warning, Single click action problem
+        }
+    }
+
+    private void mostrarMapa() {
+        ivMapa.setVisibility(View.VISIBLE);
+        clVistaMain.setVisibility(View.GONE);
     }
 
     private void cambioFocoReferencia(boolean tieneFoco) {
@@ -124,19 +192,20 @@ public class MainActivity extends AppCompatActivity{
 
 
     private void mostrarDescripcionPedido(){
-        //final Animation animShake = AnimationUtils.loadAnimation(this, R.anim.shake);
-        //btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
-        //btnSiguiente.startAnimation(animShake);
         String localidad = spnCiudades.getSelectedItem().toString();
         String calle = etCalle.getText().toString().trim();
         String numero = etNro.getText().toString().trim();
-        String referencia = etReferencia.toString().trim();
+        String referencia = etReferencia.getText().toString().trim();
+        String piso = etPisoRetiro.getText().toString().trim();
+        String dpto = etDptoRetiro.getText().toString().trim();
         boolean loAntesPosible =rdBtnAntesPosible.isChecked();
         LocalDateTime fechaEnvio = (!etFechaEntregaSel.getText().toString().isEmpty())
                 ? LocalDateTime.parse(etFechaEntregaSel.getText().toString(),
                                                         DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm"))
                 : null;
-        Map<Integer, String> errores = controlador.registrarDomicilioRetiro(localidad, calle, numero, referencia, loAntesPosible,
+
+        Map<Integer, String> errores = controlador.registrarDomicilioRetiro(localidad, calle,
+                numero, piso, dpto, referencia, loAntesPosible,
                 fechaEnvio,spnCiudades.getId(), tilCalleRetiro.getId(), tilNroCalleRetiro.getId(),
                 tilReferenciaRetiro.getId(),tilFechaEnvio.getId());
 
@@ -171,7 +240,7 @@ public class MainActivity extends AppCompatActivity{
                 this, android.R.layout.simple_spinner_item, ciudadesList);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spnCiudades = (Spinner) findViewById(R.id.spnCiudadesEntrega);
+
         spnCiudades.setAdapter(adapter);
     }
 

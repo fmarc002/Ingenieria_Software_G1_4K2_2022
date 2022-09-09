@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="celeste_200">#3086AE</color>
+    <color name="rosa_100">#BE3784</color>
+    <color name="rosa_200">#B32773</color>
+    <color name="celeste_bak">#D4E5F5</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

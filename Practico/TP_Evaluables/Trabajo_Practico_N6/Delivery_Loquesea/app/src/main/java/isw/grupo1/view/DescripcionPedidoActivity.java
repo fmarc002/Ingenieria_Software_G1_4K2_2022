@@ -1,6 +1,8 @@
 package isw.grupo1.view;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -13,6 +15,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.OpenableColumns;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -41,6 +44,7 @@ public class DescripcionPedidoActivity extends AppCompatActivity {
     private ImageButton btnCargarImagen, btnQuitarImagen;
     private ImageView ivImagen;
     private Uri uriImagen;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,13 +61,24 @@ public class DescripcionPedidoActivity extends AppCompatActivity {
         ivImagen = findViewById(R.id.ivImagenSeleccionada);
         btnCargarImagen = findViewById(R.id.btnCargarImagen);
         btnQuitarImagen = findViewById(R.id.imgBtnQuitarImagen);
-        //btnQuitarImagen.setVisibility(View.GONE);
+        btnQuitarImagen.setVisibility(View.GONE);
         ivImagen.setVisibility(View.GONE);
         etDescripcionPedido.setOnFocusChangeListener((vista, tieneFoco) -> cambioFocoDescripcion(tieneFoco));
         btnSiguienteActivity.setOnClickListener((view -> mostrarDomicilioEntrega()));
         btnQuitarImagen.setOnClickListener(view -> quitarImagen());
         btnCargarImagen.setOnClickListener(view -> cargarImagen());
+        actionBar = getSupportActionBar();
+        //actionBar.setDisplayHomeAsUpEnabled(true);
+        cargarActionBar();
 
+    }
+
+    private void cargarActionBar(){
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setCustomView(R.layout.custom_action_bar);
+        View view =actionBar.getCustomView();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     private void cargarImagen() {
@@ -141,6 +156,16 @@ public class DescripcionPedidoActivity extends AppCompatActivity {
         btnQuitarImagen.setVisibility(View.GONE);
         tvPathImagen.setText("");
         tvPathImagen.setVisibility(View.GONE);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }
