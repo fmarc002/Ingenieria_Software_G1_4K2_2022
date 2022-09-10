@@ -35,13 +35,22 @@ public class ControladorPedidoLoQueSea implements Serializable {
         errores = new Hashtable<>();
         pedidoLoQueSea = new PedidoLoQueSea();
         //Limpiar errores cuando se pasa a una nueva activity
-        DOMICILIOS_RANDOM = new Domicilio[5];
+        DOMICILIOS_RANDOM = new Domicilio[10];
         generarDomiciliosRandom();
     }
 
     private void generarDomiciliosRandom() {
 
-
+        DOMICILIOS_RANDOM[0] = new Domicilio("Gral. Paz", 1456, "B", 3);
+        DOMICILIOS_RANDOM[1] = new Domicilio("Velez Sarsfield", 3212);
+        DOMICILIOS_RANDOM[2] = new Domicilio("San Martín", 25);
+        DOMICILIOS_RANDOM[3] = new Domicilio("Uriburu", 567);
+        DOMICILIOS_RANDOM[4] = new Domicilio("Cnel. Pringles", 895, "C", 2);
+        DOMICILIOS_RANDOM[5] = new Domicilio("27 de Abril", 1623);
+        DOMICILIOS_RANDOM[6] = new Domicilio("Hipolito Yrigoyen", 123, "F", 6);
+        DOMICILIOS_RANDOM[7] = new Domicilio("Gral. Paz", 21);
+        DOMICILIOS_RANDOM[8] = new Domicilio("San Martín", 432);
+        DOMICILIOS_RANDOM[9] = new Domicilio("Gral. Paz", 1958);
     }
 
     public Domicilio obtenerDomicilioRandom(){

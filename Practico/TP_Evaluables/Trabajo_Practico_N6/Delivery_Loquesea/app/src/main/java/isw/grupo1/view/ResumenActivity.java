@@ -5,10 +5,12 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,6 +34,7 @@ public class ResumenActivity extends AppCompatActivity {
     private ConstraintLayout clPagoEfectivo, clPagoTarjeta;
     private PedidoLoQueSea pedido;
     private ActionBar actionBar;
+    private Button btnConfirmar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +53,14 @@ public class ResumenActivity extends AppCompatActivity {
         actionBar = getSupportActionBar();
         //actionBar.setDisplayHomeAsUpEnabled(true);
         cargarActionBar();
+        btnConfirmar.setOnClickListener(view -> confirmarPedido());
     }
+
+    private void confirmarPedido() {
+        Intent confirmarIntent = new Intent(this, ConfirmacionActivity.class);
+        startActivity(confirmarIntent);
+    }
+
     private void cargarActionBar(){
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setDisplayShowCustomEnabled(true);
@@ -113,7 +123,7 @@ public class ResumenActivity extends AppCompatActivity {
         tvReferenciaRetiro.setText(referencia);
         Integer piso = pedido.getDomicilioRetiro().getPiso();
         tvPisoRetiro.setText((piso != null) ? String.valueOf(piso) : "");
-        tvDptoRetiro.setText(pedido.getDomicilioEnvio().getDpto());
+        tvDptoRetiro.setText(pedido.getDomicilioRetiro().getDpto());
     }
 
     private void cargarVistas(){
@@ -137,6 +147,7 @@ public class ResumenActivity extends AppCompatActivity {
         clPagoEfectivo = findViewById(R.id.clPagoEfectivoResumen);
         clPagoTarjeta = findViewById(R.id.clPagoTarjetaResumen);
         tvMomentoEnvio = findViewById(R.id.tvMomentoEnvioResumen);
+        btnConfirmar = findViewById(R.id.btnConfirmarPedido);
     }
 
     @Override

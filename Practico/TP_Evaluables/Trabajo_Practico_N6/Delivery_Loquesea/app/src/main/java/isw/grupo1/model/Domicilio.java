@@ -11,6 +11,39 @@ public class Domicilio implements Serializable {
     private Integer piso;
     private String referencia;
 
+    public Domicilio(){
+
+    }
+
+    public Domicilio(String calle, int numero) {
+        this.calle = calle;
+        this.numero = numero;
+    }
+
+    public Domicilio(String calle, int numero, String dpto, Integer piso, String referencia) {
+        this.calle = calle;
+        this.numero = numero;
+        this.dpto = dpto;
+        this.piso = piso;
+        this.referencia = referencia;
+    }
+
+    public Domicilio(String localidad, String calle, int numero, String dpto, Integer piso, String referencia) {
+        this.localidad = localidad;
+        this.calle = calle;
+        this.numero = numero;
+        this.dpto = dpto;
+        this.piso = piso;
+        this.referencia = referencia;
+    }
+
+    public Domicilio(String calle, int numero, String dpto, Integer piso) {
+        this.calle = calle;
+        this.numero = numero;
+        this.dpto = dpto;
+        this.piso = piso;
+    }
+
     public String getLocalidad() {
         return localidad;
     }

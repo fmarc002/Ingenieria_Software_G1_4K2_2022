@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="isw.grupo1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Delivery_Loquesea" >
+        <activity
+            android:name="isw.grupo1.view.ConfirmacionActivity"
+            android:exported="false" />
+        <activity
+            android:name="isw.grupo1.view.ResumenActivity"
+            android:exported="false"
+            android:parentActivityName="isw.grupo1.view.MedioPagoActivity" />
+        <activity
+            android:name="isw.grupo1.view.MedioPagoActivity"
+            android:exported="false"
+            android:parentActivityName="isw.grupo1.view.DomicilioEntregaActivity" />
+        <activity
+            android:name="isw.grupo1.view.DomicilioEntregaActivity"
+            android:exported="false"
+            android:parentActivityName="isw.grupo1.view.DescripcionPedidoActivity" />
+        <activity
+            android:name="isw.grupo1.view.DescripcionPedidoActivity"
+            android:exported="false"
+            android:parentActivityName="isw.grupo1.MainActivity" />
+        <activity
+            android:name="isw.grupo1.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

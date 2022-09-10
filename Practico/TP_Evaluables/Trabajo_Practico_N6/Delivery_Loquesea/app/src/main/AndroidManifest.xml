@@ -14,21 +14,24 @@
         android:theme="@style/Theme.Delivery_Loquesea"
         tools:targetApi="31">
         <activity
+            android:name=".view.ConfirmacionActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.ResumenActivity"
             android:exported="false"
-            android:parentActivityName=".view.MedioPagoActivity"/>
+            android:parentActivityName=".view.MedioPagoActivity" />
         <activity
             android:name=".view.MedioPagoActivity"
             android:exported="false"
-            android:parentActivityName=".view.DomicilioEntregaActivity"/>
+            android:parentActivityName=".view.DomicilioEntregaActivity" />
         <activity
             android:name=".view.DomicilioEntregaActivity"
             android:exported="false"
-            android:parentActivityName=".view.DescripcionPedidoActivity"/>
+            android:parentActivityName=".view.DescripcionPedidoActivity" />
         <activity
             android:name=".view.DescripcionPedidoActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

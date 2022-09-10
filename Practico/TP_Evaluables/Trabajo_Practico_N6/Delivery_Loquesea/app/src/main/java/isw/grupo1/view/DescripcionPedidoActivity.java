@@ -11,6 +11,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -41,7 +42,8 @@ public class DescripcionPedidoActivity extends AppCompatActivity {
     private TextInputLayout tilDescripcionPedido;
     private TextView tvPathImagen;
     private Button btnSiguienteActivity;
-    private ImageButton btnCargarImagen, btnQuitarImagen;
+    private Button btnCargarImagen;
+    private Button btnQuitarImagen;
     private ImageView ivImagen;
     private Uri uriImagen;
     private ActionBar actionBar;

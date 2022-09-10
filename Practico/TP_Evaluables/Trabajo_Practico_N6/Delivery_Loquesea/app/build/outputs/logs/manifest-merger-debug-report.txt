@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-46:12
 MERGED from [com.google.android.material:material:1.4.0] /home/emmagalzio/.gradle/caches/transforms-3/083bd3f816816850587c63c88084f85c/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/emmagalzio/.gradle/caches/transforms-3/e7dbb16f299d71d4e4275e1eede125d3/transformed/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] /home/emmagalzio/.gradle/caches/transforms-3/5dde970b1729ca206195f6b1dfead0f7/transformed/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
@@ -39,27 +39,27 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/emmagalzio/.gradle/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/emmagalzio/.gradle/caches/transforms-3/be78f20c96fdd8562774ce9c33a112b9/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/emmagalzio/.gradle/caches/transforms-3/f1c1f6112ea6a1f399972dce89bf2eda/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/emmagalzio/.gradle/caches/transforms-3/ac1943e7bef6fbc255ced2a54f8f630e/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:4:5-25
 		INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml
 		INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-46:12
 		INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:1-46:12
 		INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:6:5-41:19
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:6:5-44:19
 MERGED from [com.google.android.material:material:1.4.0] /home/emmagalzio/.gradle/caches/transforms-3/083bd3f816816850587c63c88084f85c/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] /home/emmagalzio/.gradle/caches/transforms-3/083bd3f816816850587c63c88084f85c/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/emmagalzio/.gradle/caches/transforms-3/e7dbb16f299d71d4e4275e1eede125d3/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
@@ -88,54 +88,60 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/emmag
 		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:14:9-55
 	android:dataExtractionRules
 		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:8:9-65
-activity#isw.grupo1.view.ResumenActivity
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:16:9-19:67
-	android:parentActivityName
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:19:13-65
+activity#isw.grupo1.view.ConfirmacionActivity
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:17:13-49
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:17:13-54
+activity#isw.grupo1.view.ResumenActivity
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:19:9-22:68
+	android:parentActivityName
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:22:13-65
+	android:exported
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:20:13-49
 activity#isw.grupo1.view.MedioPagoActivity
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:20:9-23:74
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:23:9-26:75
 	android:parentActivityName
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:23:13-72
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:26:13-72
 	android:exported
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:22:13-37
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:21:13-51
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:24:13-51
 activity#isw.grupo1.view.DomicilioEntregaActivity
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:24:9-27:75
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:27:9-30:76
 	android:parentActivityName
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:27:13-73
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:30:13-73
 	android:exported
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:26:13-37
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:25:13-58
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:28:13-58
 activity#isw.grupo1.view.DescripcionPedidoActivity
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:28:9-31:57
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:31:9-34:58
 	android:parentActivityName
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:31:13-55
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:34:13-55
 	android:exported
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:30:13-37
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:29:13-59
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:32:13-59
 activity#isw.grupo1.MainActivity
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:32:9-40:20
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:35:9-43:20
 	android:exported
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:34:13-36
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:33:13-41
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:36:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:35:13-39:29
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:36:17-69
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:36:25-66
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:38:17-77
+ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:38:27-74
+		ADDED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml:41:27-74
 uses-sdk
 INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/emmagalzio/Documentos/ISW/Repositorio ISW/Ingenieria_Software_G1_4K2_2022/Practico/TP_Evaluables/Trabajo_Practico_N6/Delivery_Loquesea/app/src/main/AndroidManifest.xml

@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity{
     private EditText etCalle;
     private EditText etNro;
     private EditText etReferencia;
-    private ImageButton imgBtnMapa;
+    private Button imgBtnMapa;
     private ControladorPedidoLoQueSea controlador;
     private RadioButton rdBtnAntesPosible;
     private RadioButton rdBtnEntregaProgramada;
@@ -133,14 +133,13 @@ public class MainActivity extends AppCompatActivity{
 
             ivMapa.setVisibility(View.GONE);
             clVistaMain.setVisibility(View.VISIBLE);
-            //Domicilio domicilio = controlador.obtenerDomicilioRandom();
+            Domicilio domicilio = controlador.obtenerDomicilioRandom();
             Random random = new Random();
-            //etCalle.setText(domicilio.getCalle());
-            //etNro.setText(domicilio.getNumero());
-            //etPisoRetiro.setText(domicilio.getPiso());
-            //etDptoRetiro.setText(domicilio.getDpto());
+            etCalle.setText(domicilio.getCalle());
+            etNro.setText(String.valueOf(domicilio.getNumero()));
+            etPisoRetiro.setText((domicilio.getPiso() != null) ? domicilio.getPiso().toString() : "");
+            etDptoRetiro.setText((domicilio.getDpto() != null) ? domicilio.getDpto() : "");
             spnCiudades.setSelection(random.nextInt(spnCiudades.getAdapter().getCount()));
-
         }else {
             LAST_CLICK_TIME = System.currentTimeMillis();
             // !Warning, Single click action problem
@@ -235,7 +234,8 @@ public class MainActivity extends AppCompatActivity{
     private void cargarCiudades(){
         List<String> ciudadesList =  new ArrayList<String>();
         ciudadesList.add("Carlos Paz");
-        ciudadesList.add("Córdoba");
+        ciudadesList.add("San Francisco");
+        ciudadesList.add("Va. Gral. Belgrano");
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 this, android.R.layout.simple_spinner_item, ciudadesList);
 

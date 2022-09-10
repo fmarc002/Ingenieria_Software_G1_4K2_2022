@@ -29,6 +29,7 @@ import java.util.Random;
 
 import isw.grupo1.R;
 import isw.grupo1.controller.ControladorPedidoLoQueSea;
+import isw.grupo1.model.Domicilio;
 
 public class DomicilioEntregaActivity extends AppCompatActivity {
 
@@ -37,7 +38,7 @@ public class DomicilioEntregaActivity extends AppCompatActivity {
     private EditText etCalle;
     private EditText etNro;
     private EditText etReferencia, etPiso, etDpto;
-    private ImageButton imgBtnMapa;
+    private Button imgBtnMapa;
     private TextInputLayout tilCalleEnvio, tilNroCalleEnvio, tilReferenciaEnvio;
     private ControladorPedidoLoQueSea controlador;
     private ImageView ivMapa;
@@ -79,7 +80,8 @@ public class DomicilioEntregaActivity extends AppCompatActivity {
     private void cargarCiudades(){
         List<String> ciudadesList =  new ArrayList<String>();
         ciudadesList.add("Carlos Paz");
-        ciudadesList.add("Córdoba");
+        ciudadesList.add("San Francisco");
+        ciudadesList.add("Va. Gral. Belgrano");
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 this, android.R.layout.simple_spinner_item, ciudadesList);
 
@@ -198,14 +200,13 @@ public class DomicilioEntregaActivity extends AppCompatActivity {
 
             ivMapa.setVisibility(View.GONE);
             clVistaDomicilio.setVisibility(View.VISIBLE);
-            //Domicilio domicilio = controlador.obtenerDomicilioRandom();
+            Domicilio domicilio = controlador.obtenerDomicilioRandom();
             Random random = new Random();
-            //etCalle.setText(domicilio.getCalle());
-            //etNro.setText(domicilio.getNumero());
-            //etPisoRetiro.setText(domicilio.getPiso());
-            //etDptoRetiro.setText(domicilio.getDpto());
+            etCalle.setText(domicilio.getCalle());
+            etNro.setText(String.valueOf(domicilio.getNumero()));
+            etPiso.setText((domicilio.getPiso() != null) ? domicilio.getPiso().toString() : "");
+            etDpto.setText((domicilio.getDpto() != null) ? domicilio.getDpto() : "");
             spnCiudades.setSelection(random.nextInt(spnCiudades.getAdapter().getCount()));
-
         }else {
             LAST_CLICK_TIME = System.currentTimeMillis();
             // !Warning, Single click action problem
