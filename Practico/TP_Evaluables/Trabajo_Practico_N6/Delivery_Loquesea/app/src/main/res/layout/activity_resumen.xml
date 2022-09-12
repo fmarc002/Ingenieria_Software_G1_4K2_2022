@@ -76,6 +76,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
+                        android:maxWidth="190dp"
                         android:text="calle"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,7 +102,7 @@
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tvTituloCalleEnvioResumen" />
+                        app:layout_constraintTop_toBottomOf="@+id/tvCalleEnvioResumen" />
 
                     <TextView
                         android:id="@+id/tvPisoEnvioResumen"
@@ -112,7 +113,7 @@
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/textView25"
-                        app:layout_constraintTop_toBottomOf="@id/tvTituloCalleEnvioResumen" />
+                        app:layout_constraintTop_toBottomOf="@+id/tvCalleEnvioResumen" />
 
                     <TextView
                         android:id="@+id/tvTituloDptoEnvioResumen"
@@ -123,7 +124,7 @@
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/tvPisoEnvioResumen"
-                        app:layout_constraintTop_toBottomOf="@+id/tvTituloCalleEnvioResumen" />
+                        app:layout_constraintTop_toBottomOf="@+id/tvCalleEnvioResumen" />
 
                     <TextView
                         android:id="@+id/tvDptoEnvioResumen"
@@ -134,7 +135,7 @@
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/tvTituloDptoEnvioResumen"
-                        app:layout_constraintTop_toBottomOf="@+id/tvTituloCalleEnvioResumen" />
+                        app:layout_constraintTop_toBottomOf="@+id/tvCalleEnvioResumen" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -244,6 +245,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
+                        android:maxWidth="190dp"
+                        android:maxLines="3"
                         android:text="calle"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -269,7 +272,7 @@
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/tvTituloCalleResumen"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCalleRetiroResumen"
                         app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
@@ -281,7 +284,7 @@
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/tvTitPisoRetResumen"
-                        app:layout_constraintTop_toBottomOf="@+id/tvTituloCalleResumen" />
+                        app:layout_constraintTop_toBottomOf="@+id/tvCalleRetiroResumen" />
 
                     <TextView
                         android:id="@+id/tvTituloDptoRetiroResumen"
@@ -292,7 +295,7 @@
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/tvPisoRetiroResumen"
-                        app:layout_constraintTop_toBottomOf="@+id/tvTituloCalleResumen" />
+                        app:layout_constraintTop_toBottomOf="@+id/tvCalleRetiroResumen" />
 
                     <TextView
                         android:id="@+id/tvDptoRetiroResumen"
@@ -303,7 +306,7 @@
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/tvTituloDptoRetiroResumen"
-                        app:layout_constraintTop_toBottomOf="@+id/tvTituloCalleResumen" />
+                        app:layout_constraintTop_toBottomOf="@+id/tvCalleRetiroResumen" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
