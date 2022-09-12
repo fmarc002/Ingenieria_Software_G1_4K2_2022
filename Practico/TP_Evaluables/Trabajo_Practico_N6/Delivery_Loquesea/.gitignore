@@ -11,6 +11,7 @@
 /captures
 .externalNativeBuild
 .cxx
+/build
 local.properties
 /build/generated
 /build/intermediates
