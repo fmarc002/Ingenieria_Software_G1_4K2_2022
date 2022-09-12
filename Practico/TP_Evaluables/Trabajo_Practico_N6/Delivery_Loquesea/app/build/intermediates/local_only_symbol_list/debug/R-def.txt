@@ -15,6 +15,7 @@ color teal_200
 color teal_700
 color verde_oscuro
 color white
+drawable deliver_eat
 drawable divisor_vertical
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -22,6 +23,7 @@ drawable mapa
 font font_awesome_6_brands_reg_400
 font font_awesome_6_free_reg_400
 font font_awesome_6_free_solid_900
+id btnAtras
 id btnCargarDomEntrega
 id btnCargarImagen
 id btnCerrarDial
@@ -58,6 +60,7 @@ id etPisoRetiro
 id etReferenciaEnvio
 id etReferenciaRetiro
 id etTitular
+id imageView
 id imgBtnQuitarImagen
 id ivImagenPedidoResumen
 id ivImagenSeleccionada
@@ -163,6 +166,7 @@ layout activity_resumen
 layout custom_action_bar
 layout dialogo_layout
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string app_name
 style Theme.Delivery_Loquesea

@@ -7,6 +7,8 @@ import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 
+import org.w3c.dom.Text;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -359,24 +361,6 @@ public class ControladorPedidoLoQueSea implements Serializable {
                 validarFechaVenc(fechaV, medioPago, idVistaFechaV);
     }
 
-    public static class FechaVencimientoFilter implements InputFilter{
-
-        public CharSequence filter(CharSequence source, int start, int end,
-                                   Spanned dest, int dstart, int dend){
-
-            StringBuilder builder = new StringBuilder();
-            for(int i = start; i < end; i++){
-                char c = source.charAt(i);
-                builder.append(c);
-                if(builder.length() == 2){
-                    builder.append("/");
-                }
-            }
-            boolean allCharactersValid = (builder.length() == end - start);
-            return allCharactersValid ? null : builder.toString();
-        }
-
-    }
 
     public static class AlphaNumericInputFilter implements InputFilter {
         public CharSequence filter(CharSequence source, int start, int end,
@@ -386,7 +370,7 @@ public class ControladorPedidoLoQueSea implements Serializable {
             StringBuilder builder = new StringBuilder();
             for (int i = start; i < end; i++) {
                 char c = source.charAt(i);
-                if (Character.isLetterOrDigit(c) || Character.isSpaceChar(c)) {
+                if (Character.isLetterOrDigit(c) || Character.isSpaceChar(c) || Character.valueOf(c).equals('\u00D1') || Character.valueOf(c).equals('\u00F1')) {
                     builder.append(c);
                 }
             }
@@ -399,6 +383,7 @@ public class ControladorPedidoLoQueSea implements Serializable {
     public PedidoLoQueSea getPedido(){
         return pedidoLoQueSea;
     }
+
 
 
     public static class FechaVencimientoWatcher implements TextWatcher{

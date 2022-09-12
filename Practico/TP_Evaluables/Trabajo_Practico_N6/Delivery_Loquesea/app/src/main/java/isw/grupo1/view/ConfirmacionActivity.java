@@ -1,9 +1,11 @@
 package isw.grupo1.view;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import isw.grupo1.MainActivity;
@@ -12,14 +14,16 @@ import isw.grupo1.R;
 public class ConfirmacionActivity extends AppCompatActivity {
 
     private Button btnInicio;
+    private ActionBar actionBar;
+    private Button btnAtras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirmacion);
         btnInicio = findViewById(R.id.btnInicio);
-
         btnInicio.setOnClickListener(view -> mostrarInicio());
+        cargarActionBar();
     }
 
     private void mostrarInicio() {
@@ -29,5 +33,16 @@ public class ConfirmacionActivity extends AppCompatActivity {
         //startActivity(intentInicio);
         //finish();
         navigateUpTo(new Intent(getBaseContext(), MainActivity.class));
+    }
+    private void cargarActionBar(){
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setCustomView(R.layout.custom_action_bar);
+        View view =actionBar.getCustomView();
+        //actionBar.setDisplayHomeAsUpEnabled(true);
+        btnAtras = findViewById(R.id.btnAtras);
+        btnAtras.setVisibility(View.GONE);
+
     }
 }

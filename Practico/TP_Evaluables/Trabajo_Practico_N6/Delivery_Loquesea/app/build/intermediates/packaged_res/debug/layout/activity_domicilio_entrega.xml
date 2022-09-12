@@ -207,9 +207,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_weight="1"
                                 android:ems="10"
-                                android:inputType="textPersonName"
+                                android:inputType="number|textCapSentences|textCapWords"
+                                android:maxWidth="60dp"
                                 android:maxLength="3"
+                                android:minWidth="100dp"
                                 android:minHeight="50dp" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -309,6 +314,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/verde_oscuro"
                 android:text="Siguiente"
                 app:cornerRadius="50dp"
                 app:layout_constraintBottom_toBottomOf="parent"

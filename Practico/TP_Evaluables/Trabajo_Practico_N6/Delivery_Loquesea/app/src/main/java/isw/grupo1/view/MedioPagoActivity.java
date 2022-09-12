@@ -39,6 +39,7 @@ public class MedioPagoActivity extends AppCompatActivity {
     private LinearLayout llPagoEfectivo, llPagoTarjeta;
     private ControladorPedidoLoQueSea controlador;
     private ActionBar actionBar;
+    private Button btnAtras;
 
 
 
@@ -75,7 +76,6 @@ public class MedioPagoActivity extends AppCompatActivity {
             }
         });
         btnSiguiente.setOnClickListener(view -> mostrarResumenPedido());
-        //etNroTarjeta.addTextChangedListener(new ControladorPedidoLoQueSea.FourDigitCardFormatWatcher());
         etFechaV.addTextChangedListener(new ControladorPedidoLoQueSea.FechaVencimientoWatcher());
         etNroTarjeta.addTextChangedListener(new ControladorPedidoLoQueSea.NumeroTarjetaWatcher());
     }
@@ -84,7 +84,12 @@ public class MedioPagoActivity extends AppCompatActivity {
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setCustomView(R.layout.custom_action_bar);
         View view =actionBar.getCustomView();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        //actionBar.setDisplayHomeAsUpEnabled(true);
+        btnAtras = findViewById(R.id.btnAtras);
+        btnAtras.setOnClickListener(bView -> botonAtras());
+    }
+    private void botonAtras(){
+        this.finish();
     }
 
     private void mostrarResumenPedido() {

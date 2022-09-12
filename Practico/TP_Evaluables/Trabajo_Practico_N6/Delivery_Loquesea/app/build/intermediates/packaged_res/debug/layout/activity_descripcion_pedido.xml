@@ -13,6 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/verde_oscuro"
         android:text="Siguiente"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"

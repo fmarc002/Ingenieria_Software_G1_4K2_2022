@@ -14,7 +14,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="verde_oscuro">#00701a</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">Delivery_Loquesea</string>
+    <string name="app_name">DeliverEat</string>
     <style name="Theme.Delivery_Loquesea" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         

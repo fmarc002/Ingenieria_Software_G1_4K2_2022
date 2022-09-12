@@ -15,7 +15,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
@@ -38,12 +37,13 @@ public class DomicilioEntregaActivity extends AppCompatActivity {
     private EditText etCalle;
     private EditText etNro;
     private EditText etReferencia, etPiso, etDpto;
-    private Button imgBtnMapa;
+    private Button btnMapa;
     private TextInputLayout tilCalleEnvio, tilNroCalleEnvio, tilReferenciaEnvio;
     private ControladorPedidoLoQueSea controlador;
     private ImageView ivMapa;
     private ConstraintLayout clVistaDomicilio;
     private ActionBar actionBar;
+    private Button btnAtras;
 
     private static long LAST_CLICK_TIME = 0;
     private final int mDoubleClickInterval = 400; // Milliseconds
@@ -61,7 +61,7 @@ public class DomicilioEntregaActivity extends AppCompatActivity {
         etNro.setOnFocusChangeListener(((view, b) -> cambioFocoNroCalle(b)));
         etReferencia.setOnFocusChangeListener(((view, b) -> cambioFocoReferencia(b)));
         btnSiguiente.setOnClickListener((view) -> mostrarMedioPago());
-        imgBtnMapa.setOnClickListener(view -> mostrarMapa());
+        btnMapa.setOnClickListener(view -> mostrarMapa());
         ivMapa.setOnClickListener((view) -> seleccionDomicilioMapa());
         actionBar = getSupportActionBar();
         //actionBar.setDisplayHomeAsUpEnabled(true);
@@ -74,7 +74,12 @@ public class DomicilioEntregaActivity extends AppCompatActivity {
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setCustomView(R.layout.custom_action_bar);
         View view =actionBar.getCustomView();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        //actionBar.setDisplayHomeAsUpEnabled(true);
+        btnAtras = findViewById(R.id.btnAtras);
+        btnAtras.setOnClickListener(bView -> botonAtras());
+    }
+    private void botonAtras(){
+        this.finish();
     }
 
     private void cargarCiudades(){
@@ -101,7 +106,7 @@ public class DomicilioEntregaActivity extends AppCompatActivity {
         etPiso = findViewById(R.id.etPisoEnvio);
         etDpto = findViewById(R.id.etDptoEnvio);
         ivMapa = findViewById(R.id.ivMapaEnvio);
-        imgBtnMapa = findViewById(R.id.btnMapaSelDomEnvio);
+        btnMapa = findViewById(R.id.btnMapaSelDomEnvio);
         clVistaDomicilio = findViewById(R.id.clDomicilioEnvioActivity);
     }
 
@@ -153,7 +158,10 @@ public class DomicilioEntregaActivity extends AppCompatActivity {
         curInputFilters.add(1, new InputFilter.AllCaps());
         InputFilter[] newInputFilters = curInputFilters.toArray(new InputFilter[curInputFilters.size()]);
         etCalle.setFilters(newInputFilters);
-        etDpto.setFilters(newInputFilters);
+        ArrayList<InputFilter> dptoFilters = new ArrayList<>(Arrays.asList(etDpto.getFilters()));
+        dptoFilters.add(0, new ControladorPedidoLoQueSea.AlphaNumericInputFilter());
+        dptoFilters.add(1, new InputFilter.AllCaps());
+        etDpto.setFilters(dptoFilters.toArray(new InputFilter[dptoFilters.size()]));
     }
 
     private void mostrarMedioPago(){

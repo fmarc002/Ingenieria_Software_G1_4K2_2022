@@ -34,7 +34,7 @@ public class ResumenActivity extends AppCompatActivity {
     private ConstraintLayout clPagoEfectivo, clPagoTarjeta;
     private PedidoLoQueSea pedido;
     private ActionBar actionBar;
-    private Button btnConfirmar;
+    private Button btnConfirmar, btnAtras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +66,12 @@ public class ResumenActivity extends AppCompatActivity {
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setCustomView(R.layout.custom_action_bar);
         View view =actionBar.getCustomView();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        //actionBar.setDisplayHomeAsUpEnabled(true);
+        btnAtras = findViewById(R.id.btnAtras);
+        btnAtras.setOnClickListener(bView -> botonAtras());
+    }
+    private void botonAtras(){
+        this.finish();
     }
 
     private void cargarPago() {

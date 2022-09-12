@@ -47,6 +47,7 @@ public class DescripcionPedidoActivity extends AppCompatActivity {
     private ImageView ivImagen;
     private Uri uriImagen;
     private ActionBar actionBar;
+    private Button btnAtras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +81,9 @@ public class DescripcionPedidoActivity extends AppCompatActivity {
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setCustomView(R.layout.custom_action_bar);
         View view =actionBar.getCustomView();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        //actionBar.setDisplayHomeAsUpEnabled(true);
+        btnAtras = findViewById(R.id.btnAtras);
+        btnAtras.setOnClickListener(bView -> botonAtras());
     }
 
     private void cargarImagen() {
@@ -158,6 +161,10 @@ public class DescripcionPedidoActivity extends AppCompatActivity {
         btnQuitarImagen.setVisibility(View.GONE);
         tvPathImagen.setText("");
         tvPathImagen.setVisibility(View.GONE);
+    }
+
+    private void botonAtras(){
+        this.finish();
     }
 
     @Override

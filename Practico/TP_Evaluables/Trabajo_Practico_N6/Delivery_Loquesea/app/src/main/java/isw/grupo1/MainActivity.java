@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity{
     private ImageView ivMapa;
     private ConstraintLayout clVistaMain;
     private ActionBar actionBar;
+    private Button btnAtras;
 
     private static long LAST_CLICK_TIME = 0;
     private final int mDoubleClickInterval = 400; // Milliseconds
@@ -81,6 +82,8 @@ public class MainActivity extends AppCompatActivity{
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setCustomView(R.layout.custom_action_bar);
         View view =actionBar.getCustomView();
+        btnAtras = findViewById(R.id.btnAtras);
+        btnAtras.setVisibility(View.GONE);
     }
 
     private void cargarVistas(){
@@ -123,7 +126,11 @@ public class MainActivity extends AppCompatActivity{
         curInputFilters.add(1, new InputFilter.AllCaps());
         InputFilter[] newInputFilters = curInputFilters.toArray(new InputFilter[curInputFilters.size()]);
         etCalle.setFilters(newInputFilters);
-        etDptoRetiro.setFilters(newInputFilters);
+        ArrayList<InputFilter> dptoFilters = new ArrayList<>(Arrays.asList(etDptoRetiro.getFilters()));
+        dptoFilters.add(0, new ControladorPedidoLoQueSea.AlphaNumericInputFilter());
+        dptoFilters.add(1, new InputFilter.AllCaps());
+        etDptoRetiro.setFilters(dptoFilters.toArray(new InputFilter[dptoFilters.size()]));
+        //etDptoRetiro.addTextChangedListener(new ControladorPedidoLoQueSea.DptoWatcher());
     }
 
     private void seleccionDomicilioMapa() {
