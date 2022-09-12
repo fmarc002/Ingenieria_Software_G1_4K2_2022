@@ -43,13 +43,13 @@ public class ControladorPedidoLoQueSea implements Serializable {
 
     private void generarDomiciliosRandom() {
 
-        DOMICILIOS_RANDOM[0] = new Domicilio("Gral. Paz", 1456, "B", 3);
+        DOMICILIOS_RANDOM[0] = new Domicilio("Gral. Paz", 1456, "B", "3");
         DOMICILIOS_RANDOM[1] = new Domicilio("Velez Sarsfield", 3212);
         DOMICILIOS_RANDOM[2] = new Domicilio("San Martín", 25);
         DOMICILIOS_RANDOM[3] = new Domicilio("Uriburu", 567);
-        DOMICILIOS_RANDOM[4] = new Domicilio("Cnel. Pringles", 895, "C", 2);
+        DOMICILIOS_RANDOM[4] = new Domicilio("Cnel. Pringles", 895, "C", "2");
         DOMICILIOS_RANDOM[5] = new Domicilio("27 de Abril", 1623);
-        DOMICILIOS_RANDOM[6] = new Domicilio("Hipolito Yrigoyen", 123, "F", 6);
+        DOMICILIOS_RANDOM[6] = new Domicilio("Hipolito Yrigoyen", 123, "F", "6");
         DOMICILIOS_RANDOM[7] = new Domicilio("Gral. Paz", 21);
         DOMICILIOS_RANDOM[8] = new Domicilio("San Martín", 432);
         DOMICILIOS_RANDOM[9] = new Domicilio("Gral. Paz", 1958);
@@ -77,7 +77,7 @@ public class ControladorPedidoLoQueSea implements Serializable {
 
     public boolean validarReferenciaDomicilio(String referencia, int idVista){
         if(referencia == null || referencia.trim().isEmpty()) return true;
-        if( referencia.trim().length() < 400) {
+        if( referencia.trim().length() <= 400) {
             return true;
         } else{
             errores.put(idVista, "Máximo 400 caracteres");
@@ -118,10 +118,10 @@ public class ControladorPedidoLoQueSea implements Serializable {
         if(!errores.isEmpty()){
             return errores;
         }
-        Integer iPiso = (piso != null && !piso.isEmpty()) ? Integer.parseInt(piso.trim()) : null;
+        //Integer iPiso = (piso != null && !piso.isEmpty()) ? Integer.parseInt(piso.trim()) : null;
 
         pedidoLoQueSea.setDomicilioRetiro(localidad, calle, Integer.parseInt(numero), referencia,
-                iPiso, dpto);
+                piso, dpto);
         pedidoLoQueSea.setEntregaAntesPosible(loAntesPosible);
         pedidoLoQueSea.setMomentoEntrega(fechaHoraEnvio);
         return null;
@@ -199,10 +199,10 @@ public class ControladorPedidoLoQueSea implements Serializable {
         if(!errores.isEmpty()){
             return errores;
         }
-        Integer iPiso = (piso != null && !piso.isEmpty()) ? Integer.parseInt(piso.trim()) : null;
+        //Integer iPiso = (piso != null && !piso.isEmpty()) ? Integer.parseInt(piso.trim()) : null;
 
         pedidoLoQueSea.setDomicilioEntrega(localidad, calle, Integer.parseInt(numero), referencia,
-                iPiso, dpto);
+                piso, dpto);
         pedidoLoQueSea.setTotal(calcularCosto());
         return null;
 
@@ -371,6 +371,24 @@ public class ControladorPedidoLoQueSea implements Serializable {
             for (int i = start; i < end; i++) {
                 char c = source.charAt(i);
                 if (Character.isLetterOrDigit(c) || Character.isSpaceChar(c) || Character.valueOf(c).equals('\u00D1') || Character.valueOf(c).equals('\u00F1')) {
+                    builder.append(c);
+                }
+            }
+
+            // If all characters are valid, return null, otherwise only return the filtered characters
+            boolean allCharactersValid = (builder.length() == end - start);
+            return allCharactersValid ? null : builder.toString();
+        }
+    }
+    public static class AlphabeticInputFilter implements InputFilter {
+        public CharSequence filter(CharSequence source, int start, int end,
+                                   Spanned dest, int dstart, int dend) {
+
+            // Only keep characters that are alphanumeric
+            StringBuilder builder = new StringBuilder();
+            for (int i = start; i < end; i++) {
+                char c = source.charAt(i);
+                if (Character.isLetter(c) || Character.isSpaceChar(c) || Character.valueOf(c).equals('\u00D1') || Character.valueOf(c).equals('\u00F1')) {
                     builder.append(c);
                 }
             }

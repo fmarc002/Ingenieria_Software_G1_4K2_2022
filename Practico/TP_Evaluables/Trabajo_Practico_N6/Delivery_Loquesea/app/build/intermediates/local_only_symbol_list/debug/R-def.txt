@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 anim shake
 color black
+color botones_primario
 color celeste_200
 color celeste_400
 color celeste_bak
@@ -38,6 +39,7 @@ id cardView
 id cardView2
 id cardView3
 id cardView4
+id cardView5
 id clDomicilioEnvioActivity
 id clPagoEfectivoResumen
 id clPagoTarjetaResumen

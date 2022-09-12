@@ -23,7 +23,7 @@ public class PedidoLoQueSea implements Serializable {
     private TarjetaCredito tarjetaCredito;
 
     public void setDomicilioRetiro(String localidad, String calle, int numero, String referencia,
-                                   Integer piso, String dpto) {
+                                   String piso, String dpto) {
         domicilioRetiro = new Domicilio();
         domicilioRetiro.setCalle(calle);
         domicilioRetiro.setLocalidad(localidad);
@@ -99,7 +99,7 @@ public class PedidoLoQueSea implements Serializable {
     }
 
     public void setDomicilioEntrega(String localidad, String calle, int numero,
-                                    String referencia, Integer piso, String dpto) {
+                                    String referencia, String piso, String dpto) {
         domicilioEnvio = new Domicilio();
         domicilioEnvio.setLocalidad(localidad);
         domicilioEnvio.setCalle(calle);

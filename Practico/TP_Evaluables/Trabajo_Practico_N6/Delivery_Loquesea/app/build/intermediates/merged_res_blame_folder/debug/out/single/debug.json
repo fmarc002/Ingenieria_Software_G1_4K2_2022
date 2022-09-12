@@ -4,92 +4,44 @@
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/custom_action_bar.xml"
     },
     {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_dialogo_layout.xml.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/dialogo_layout.xml"
-    },
-    {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/drawable_deliver_eat.png.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/drawable/deliver_eat.png"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/font_font_awesome_6_brands_reg_400.otf.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/font/font_awesome_6_brands_reg_400.otf"
     },
     {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_activity_confirmacion.xml.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/activity_confirmacion.xml"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/drawable_ic_launcher_background.xml.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/font_font_awesome_6_free_reg_400.otf.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/font/font_awesome_6_free_reg_400.otf"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/font_font_awesome_6_free_solid_900.otf.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/font/font_awesome_6_free_solid_900.otf"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxxhdpi/ic_launcher_foreground.png"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_activity_main.xml.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/activity_main.xml"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "isw.grupo1.app-merged_res-19:/layout_activity_domicilio_entrega.xml.flat",
+        "source": "isw.grupo1.app-main-21:/layout/activity_domicilio_entrega.xml"
     },
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "isw.grupo1.app-merged_res-19:/layout_activity_medio_pago.xml.flat",
-        "source": "isw.grupo1.app-main-21:/layout/activity_medio_pago.xml"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/anim_shake.xml.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/anim/shake.xml"
-    },
-    {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-hdpi_ic_launcher_foreground.png.flat",
@@ -100,20 +52,12 @@
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-mdpi/ic_launcher.png"
     },
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_activity_domicilio_entrega.xml.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/activity_domicilio_entrega.xml"
     },
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/xml_backup_rules.xml.flat",
@@ -128,24 +72,12 @@
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/drawable/mapa.png"
     },
     {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-mdpi_ic_launcher_foreground.png.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_activity_resumen.xml.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/activity_resumen.xml"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/drawable_divisor_vertical.xml.flat",
@@ -158,10 +90,6 @@
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-hdpi_ic_launcher.png.flat",
@@ -186,5 +114,81 @@
     {
         "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_activity_descripcion_pedido.xml.flat",
         "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/activity_descripcion_pedido.xml"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_dialogo_layout.xml.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/dialogo_layout.xml"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_activity_confirmacion.xml.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/activity_confirmacion.xml"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/font_font_awesome_6_free_reg_400.otf.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/font/font_awesome_6_free_reg_400.otf"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/font_font_awesome_6_free_solid_900.otf.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/font/font_awesome_6_free_solid_900.otf"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_activity_main.xml.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/anim_shake.xml.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/anim/shake.xml"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/layout_activity_domicilio_entrega.xml.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/layout/activity_domicilio_entrega.xml"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-merged_res-19:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/emmagalzio/.gradle/daemon/7.3.3/isw.grupo1.app-main-21:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "isw.grupo1.app-merged_res-19:/layout_activity_descripcion_pedido.xml.flat",
+        "source": "isw.grupo1.app-main-21:/layout/activity_descripcion_pedido.xml"
     }
 ]

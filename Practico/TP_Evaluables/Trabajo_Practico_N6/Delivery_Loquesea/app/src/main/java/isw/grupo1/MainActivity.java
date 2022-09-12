@@ -131,6 +131,10 @@ public class MainActivity extends AppCompatActivity{
         dptoFilters.add(1, new InputFilter.AllCaps());
         etDptoRetiro.setFilters(dptoFilters.toArray(new InputFilter[dptoFilters.size()]));
         //etDptoRetiro.addTextChangedListener(new ControladorPedidoLoQueSea.DptoWatcher());
+        ArrayList<InputFilter> pisoFilters = new ArrayList<>(Arrays.asList(etPisoRetiro.getFilters()));
+        pisoFilters.add(0, new ControladorPedidoLoQueSea.AlphaNumericInputFilter());
+        pisoFilters.add(1, new InputFilter.AllCaps());
+        etPisoRetiro.setFilters(dptoFilters.toArray(new InputFilter[dptoFilters.size()]));
     }
 
     private void seleccionDomicilioMapa() {
@@ -144,7 +148,7 @@ public class MainActivity extends AppCompatActivity{
             Random random = new Random();
             etCalle.setText(domicilio.getCalle());
             etNro.setText(String.valueOf(domicilio.getNumero()));
-            etPisoRetiro.setText((domicilio.getPiso() != null) ? domicilio.getPiso().toString() : "");
+            etPisoRetiro.setText((domicilio.getPiso() != null) ? domicilio.getPiso() : "");
             etDptoRetiro.setText((domicilio.getDpto() != null) ? domicilio.getDpto() : "");
             spnCiudades.setSelection(random.nextInt(spnCiudades.getAdapter().getCount()));
         }else {

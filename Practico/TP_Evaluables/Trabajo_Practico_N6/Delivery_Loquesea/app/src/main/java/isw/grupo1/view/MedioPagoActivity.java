@@ -179,7 +179,7 @@ public class MedioPagoActivity extends AppCompatActivity {
 
     private void agregarFiltros(){
         ArrayList<InputFilter> curInputFilters = new ArrayList<>(Arrays.asList(etTitular.getFilters()));
-        curInputFilters.add(0, new ControladorPedidoLoQueSea.AlphaNumericInputFilter());
+        curInputFilters.add(0, new ControladorPedidoLoQueSea.AlphabeticInputFilter());
         curInputFilters.add(1, new InputFilter.AllCaps());
         InputFilter[] newInputFilters = curInputFilters.toArray(new InputFilter[curInputFilters.size()]);
         etTitular.setFilters(newInputFilters);

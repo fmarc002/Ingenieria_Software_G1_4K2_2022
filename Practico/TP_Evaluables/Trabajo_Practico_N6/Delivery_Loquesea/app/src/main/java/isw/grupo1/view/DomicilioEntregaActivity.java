@@ -162,6 +162,10 @@ public class DomicilioEntregaActivity extends AppCompatActivity {
         dptoFilters.add(0, new ControladorPedidoLoQueSea.AlphaNumericInputFilter());
         dptoFilters.add(1, new InputFilter.AllCaps());
         etDpto.setFilters(dptoFilters.toArray(new InputFilter[dptoFilters.size()]));
+        ArrayList<InputFilter> pisoFilters = new ArrayList<>(Arrays.asList(etPiso.getFilters()));
+        pisoFilters.add(0, new ControladorPedidoLoQueSea.AlphaNumericInputFilter());
+        pisoFilters.add(1, new InputFilter.AllCaps());
+        etPiso.setFilters(dptoFilters.toArray(new InputFilter[dptoFilters.size()]));
     }
 
     private void mostrarMedioPago(){

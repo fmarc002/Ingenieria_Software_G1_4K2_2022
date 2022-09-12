@@ -8,7 +8,7 @@ public class Domicilio implements Serializable {
     private String calle;
     private int numero;
     private String dpto;
-    private Integer piso;
+    private String piso;
     private String referencia;
 
     public Domicilio(){
@@ -20,7 +20,7 @@ public class Domicilio implements Serializable {
         this.numero = numero;
     }
 
-    public Domicilio(String calle, int numero, String dpto, Integer piso, String referencia) {
+    public Domicilio(String calle, int numero, String dpto, String piso, String referencia) {
         this.calle = calle;
         this.numero = numero;
         this.dpto = dpto;
@@ -28,7 +28,7 @@ public class Domicilio implements Serializable {
         this.referencia = referencia;
     }
 
-    public Domicilio(String localidad, String calle, int numero, String dpto, Integer piso, String referencia) {
+    public Domicilio(String localidad, String calle, int numero, String dpto, String piso, String referencia) {
         this.localidad = localidad;
         this.calle = calle;
         this.numero = numero;
@@ -37,7 +37,7 @@ public class Domicilio implements Serializable {
         this.referencia = referencia;
     }
 
-    public Domicilio(String calle, int numero, String dpto, Integer piso) {
+    public Domicilio(String calle, int numero, String dpto, String piso) {
         this.calle = calle;
         this.numero = numero;
         this.dpto = dpto;
@@ -76,11 +76,11 @@ public class Domicilio implements Serializable {
         this.dpto = dpto;
     }
 
-    public Integer getPiso() {
+    public String getPiso() {
         return piso;
     }
 
-    public void setPiso(Integer piso) {
+    public void setPiso(String piso) {
         this.piso = piso;
     }
 

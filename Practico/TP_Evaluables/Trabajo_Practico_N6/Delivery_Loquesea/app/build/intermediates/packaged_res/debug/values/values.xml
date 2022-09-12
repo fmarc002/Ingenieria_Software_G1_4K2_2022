@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
+    <color name="botones_primario">#00701a</color>
     <color name="celeste_200">#3086AE</color>
     <color name="celeste_400">#03a9f4</color>
     <color name="celeste_bak">#D4E5F5</color>

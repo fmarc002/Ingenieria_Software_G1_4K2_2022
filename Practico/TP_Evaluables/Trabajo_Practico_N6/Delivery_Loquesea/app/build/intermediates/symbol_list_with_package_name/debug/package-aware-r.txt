@@ -1001,6 +1001,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color botones_primario
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1859,6 +1860,7 @@ id cardView
 id cardView2
 id cardView3
 id cardView4
+id cardView5
 id center
 id center_horizontal
 id center_vertical

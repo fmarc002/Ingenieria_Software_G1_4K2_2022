@@ -107,7 +107,7 @@ public class ResumenActivity extends AppCompatActivity {
         tvNroCalleEnvio.setText(String.valueOf(pedido.getDomicilioEnvio().getNumero()));
         String referenciaEnvio = pedido.getDomicilioEnvio().getReferencia();
         tvReferenciaEnvio.setText(referenciaEnvio);
-        Integer piso = pedido.getDomicilioEnvio().getPiso();
+        String piso = pedido.getDomicilioEnvio().getPiso();
         tvPisoEnvio.setText((piso != null) ? String.valueOf(piso) : "");
         tvDptpEnvio.setText(pedido.getDomicilioEnvio().getDpto());
 
@@ -126,7 +126,7 @@ public class ResumenActivity extends AppCompatActivity {
         //tvReferenciaRetiro.setText("Hola Mundo!!");
         String referencia = pedido.getDomicilioRetiro().getReferencia();
         tvReferenciaRetiro.setText(referencia);
-        Integer piso = pedido.getDomicilioRetiro().getPiso();
+        String piso = pedido.getDomicilioRetiro().getPiso();
         tvPisoRetiro.setText((piso != null) ? String.valueOf(piso) : "");
         tvDptoRetiro.setText(pedido.getDomicilioRetiro().getDpto());
     }
